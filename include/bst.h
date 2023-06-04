@@ -5,7 +5,7 @@
 #include <algorithm>
 template<typename T>
   class BST {
-    private:
+   private:
       struct Node {
         T value;
         int count;
@@ -48,7 +48,7 @@ template<typename T>
         }
         return 1 + std::max(depth(root->l), depth(root->r));
       }
-    public:
+   public:
       BST(): root(nullptr) {}
       void add(T value) {
         root = addNode(root, value);
@@ -60,5 +60,5 @@ template<typename T>
         return searchT(root, value);
       }
       BST<std::string> createTree(const char* filename);
-};
+  };
 #endif  // INCLUDE_BST_H_
