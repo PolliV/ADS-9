@@ -48,8 +48,8 @@ template<typename T>
         }
         return 1 + std::max(depth(root->l), depth(root->r));
       }
-    
-   public:
+
+    public:
       BST(): root(nullptr) {}
       void add(T value) {
         root = addNode(root, value);
